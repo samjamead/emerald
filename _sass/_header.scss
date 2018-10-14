@@ -5,30 +5,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    border-bottom: 2px solid $tint;
+    padding: 20px 15px;
+    border-bottom: 1px solid $tint;
+    @include for-tablet-landscape-up {
+        padding-left: 0;
+        padding-right: 0;
+    }
   }
   a {
     text-decoration: none;
     color: #27ADE7;
   }
-  .brand {
-    margin-right: 45px;
-    h2 {
-      font-size: 2em;
-      font-weight: 300;
-      letter-spacing: 2px;
-    }
-    h3 {
-      font-weight: 300;
-      color: #777;
-    }
-  }
   nav {
+    display: none;
+    @include for-tablet-portrait-up {
+      display: block;
+    }
     a {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       margin-left: 15px;
+      @include for-tablet-portrait-up {
+          font-size: 16px;
+      }
+      @include for-tablet-landscape-up {
+          font-size: 18px;
+      }
     }
   }
   @include for-tablet-portrait-up {

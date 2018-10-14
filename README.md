@@ -6,3 +6,6 @@ Alan Mead's website
 
 - [ ] Set up Google Analytics
 - [ ] Rebrand on Twitter?
+- [ ] LinkedIn not CV
+- [ ] Leave off address? Get a PO box?
+- [ ] Alternate typeface for quotes?

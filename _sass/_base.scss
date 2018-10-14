@@ -15,7 +15,11 @@ img {
   max-width: 100%;
 }
 section {
-  padding: 45px 0 0;
+  padding: 45px 15px 0;
+  @media (min-width: 980px){
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 h1, p {
   max-width: 670px;

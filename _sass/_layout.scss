@@ -1,3 +1,14 @@
+.brand {
+  h2 {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  h3 {
+    font-weight: 300;
+    color: #777;
+  }
+}
 .container {
   max-width: 980px;
   margin: 0px auto;
@@ -5,30 +16,59 @@
 .page-content {
   @include for-tablet-portrait-up {
     padding-top: 103px;
-  }
+  };
 }
 .hero {
   background: url("./images/alan_1_blue_wide.jpg") no-repeat right bottom, linear-gradient(#A1DAF8, #A1DAF8);
-  background-size: 110%;
-  min-height: 480px;
+  background-size: 180%;
+  min-height: 290px;
   display: flex;
   align-items: center;
+  @include for-big-phones-up {
+    min-height: 320px;
+    background-size: 165%;
+  };
+  @include for-tablet-portrait-up {
+    min-height: 400px;
+    background-size: 120%;
+  };
+  @include for-tablet-landscape-up {
+    min-height: 480px;
+    background-size: 110%;
+  };
   .opening-speechmarks {
-    max-width: 50px;
     display: block;
-    margin-left: -50px;
+    max-width: 50px;
+    margin: 0 20px;
   }
   .hero-copy {
-    display: block;
-    flex: 0 0 48%;
-    blockquote {
+    display: none;
+    @include for-tablet-portrait-up {
+      flex: 0 0 50%;
       background: #fff;
+      display: flex;
+      align-items: center;
+    };
+    @include for-tablet-landscape-up {
+      flex: 0 0 55%;
+    };
+    @include for-desktop-up {
+      flex: 0 0 60%;
+      margin-left: -70px;
+    };
+    blockquote {
       color: #222;
-      padding: 20px 0 20px 20px;
-      font-size: 24px;
+      padding: 20px 0;
+      font-size: 15px;
       font-weight: 300;
       line-height: 1.4;
       font-style: italic;
+      @include for-tablet-landscape-up {
+        font-size: 24px;
+      };
+      @include for-desktop-up {
+        padding-left: 5px;
+      };
     }
   }
 }
@@ -52,15 +92,17 @@
   margin-top: 30px;
 }
 .card {
-  flex: 0 0 48%;
+  flex: 0 0 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  background: #333;
+  background: #f8f8f8;
   padding: 20px;
   margin-bottom: 20px;
-  color: #fff;
+  @include for-tablet-landscape-up {
+    flex: 0 0 48%;
+  };
   .card_heading {
     flex: 0;
     h2 {
@@ -69,7 +111,7 @@
     }
     h3 {
       font-size: 16px;
-      color: $tint;
+      color: $brand-color;
       padding-bottom: 10px;
     }
   }
@@ -90,10 +132,12 @@
 .quote_card {
   display: flex;
   justify-content: center;
-  background: #f8f8f8;
+  background: #fff;
   color: #333;
   font-size: 1.2rem;
   font-style: italic;
+  border-top: 1px solid $tint;
+  border-bottom: 1px solid $tint;
   .opening-speechmarks {
     max-width: 45px;
     margin: 0 10px 10px 0;
