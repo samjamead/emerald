@@ -1,0 +1,37 @@
+.site-header {
+  background: rgba(255,255,255,1);
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid $tint;
+  }
+  a {
+    text-decoration: none;
+    color: #27ADE7;
+  }
+  .brand {
+    margin-right: 45px;
+    h2 {
+      font-size: 2em;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+    h3 {
+      font-weight: 300;
+      color: #777;
+    }
+  }
+  nav {
+    a {
+      font-size: 18px;
+      font-weight: 600;
+      margin-left: 15px;
+    }
+  }
+  @include for-tablet-portrait-up {
+    position: fixed;
+  }
+}
