@@ -13,7 +13,7 @@
   max-width: 980px;
   margin: 0px auto;
 }
-.page-content {
+main {
   @include for-tablet-portrait-up {
     padding-top: 100px;
   };
@@ -161,15 +161,26 @@
   display: flex;
   justify-content: center;
   background: #fff;
-  color: #333;
-  font-size: 1.2rem;
+  font-size: 22px;
+  line-height: 1.3;
+  font-family: 'Cormorant Garamond', 'Garamond', 'Georgia', serif;
   font-style: italic;
   border-top: 1px solid $tint;
   border-bottom: 1px solid $tint;
   p {
     margin-top: 10px;
     text-align: right;
-    font-weight: bold;
     font-style: normal;
+  }
+}
+#contact {
+  border-top: 1px solid $tint;
+  padding-bottom: 0;
+}
+.contact-card {
+  .card_copy {
+    p {
+      font-size: 18px;
+    }
   }
 }

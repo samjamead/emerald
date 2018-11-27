@@ -1,40 +1,54 @@
 .site-footer {
   border-top: 1px solid $tint;
-  margin-top: 100px;
+  margin-top: 50px;
   background: #f8f8f8;
   padding: 50px 0;
   .footer-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 30px;
-    .brand {
-      margin: 0 auto 30px;
-      @include for-tablet-landscape-up {
-        margin: 0;
-      };
+    img {
+      max-width: 180px;
     }
-    .footer-nav {
+    .footer-column {
       flex: 0 0 100%;
       list-style-type: none;
       text-align: center;
+      padding-bottom: 30px;
       @include for-tablet-landscape-up {
-        flex: 0 0 60%;
-        text-align: right;
+        flex: 0 0 31%;
       };
       li {
         margin-bottom: 15px;
-        @include for-tablet-landscape-up {
-          display: inline-block;
-          margin-left: 15px;
-          margin-bottom: 0;
-        };
         a {
           font-weight: normal;
           font-size: 15px;
         }
       }
+    }
+    .column-left,
+    .column-middle {
+      @include for-tablet-landscape-up {
+        text-align: left;
+      };
+    }
+    .column-left {
+      @include for-tablet-landscape-up {
+        flex: 0 0 20%;
+      };
+    }
+    .column-middle {
+      @include for-tablet-landscape-up {
+        flex: 0 0 40%;
+      };
+    }
+    .column-right {
+      @include for-tablet-landscape-up {
+        flex: 0 0 31%;
+        text-align: right;
+      };
     }
   }
   .footer-footer {
@@ -43,6 +57,7 @@
       text-align: right;
     };
     p {
+      max-width: none;
       margin-right: 0;
       margin-left: auto;
       font-size: 14px;

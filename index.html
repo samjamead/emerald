@@ -6,7 +6,7 @@ layout: default
 
   <div class="hero">
     <div class="hero-copy">
-      <img class="opening-speechmarks" src="./assets/images/speechmarks.png" alt="speechmarks" />
+      <img class="opening-speechmarks" src={{ "/assets/images/speechmarks.png" | prepend: site.url }} alt="speechmarks" />
       <blockquote>
         <strong>Coaching helps you</strong> to get closer to the answers and achieve things you might previously have thought not possible.<br /> It helps you <strong>unlock your potential.</strong>
       </blockquote>
@@ -22,20 +22,20 @@ layout: default
     <p>But it’s easy to get blocked and lose our way, then spend too much time looking elsewhere for the answers that are actually already within us.</p>
 
     <blockquote class="copy-quote">
-      <img class="opening-speechmarks" src="./assets/images/speechmarks.png" alt="speechmarks" />
+      <img class="opening-speechmarks" src={{ "/assets/images/speechmarks.png" | prepend: site.url }} alt="speechmarks" />
       Alan came into my life when it started to change. With his coaching I felt empowered to take the reins and develop a sense of control. With his help, I found I was able to take a breath and look objectively at decisions I had to make. And then I found I was able to breathe on my own.
       <footer>
         Mary Myzer, Advanced Skills Teacher, London
       </footer>
     </blockquote>
 
-    <p><a href="#coaching" class="smooth-scroll">Coaching</a> helps you to get closer to those answers and achieve things you might previously have not thought possible. It helps you to unlock your potential.</p>
+    <p><a href={{ "/coaching" | prepend: site.url }} class="smooth-scroll">Coaching</a> helps you to get closer to those answers and achieve things you might previously have not thought possible. It helps you to unlock your potential.</p>
 
     <p>I work with individuals and businesses to help people realise their potential by helping them to work out the answers to those challenging questions and issues.</p>
 
     <p>My <a href="#" class="smooth-scroll">Coaching Workshops</a> introduce the powerful benefits of coaching to managers at all levels to help them to better engage with, and empower, their teams and colleagues.</p>
 
-    <p>Paragraph about <a href="#" class="smooth-scroll">Performance and Executive Coaching</a> lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <p><a href="#" class="smooth-scroll">Performance and Executive Coaching</a> is all about achieving goals. I help people across all levels of business to grow, develop and improve in their role, from the first-time manager to the experienced executive.</p>
 
     <p>As well as Coaching, I’ve been designing and delivering <a href="#training" class="smooth-scroll">Training</a> since 2012. My training focuses on helping people have better conversations. Coaching plays an important part in my training too as it doesn’t have to be a one-to-one experience.</p>
 
@@ -46,9 +46,9 @@ layout: default
           <h2>Coaching</h2>
         </div>
         <div class="card_copy">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>We are all faced with challenging situations and difficult decisions from time to time. Coaching – many people call it Life Coaching – can help you to understand how you really feel about those situations and decisions and plan how to approach and tackle them.</p>
         </div>
-        <a class="card_link" href="{{ training_course.link | relative_url }}" target="_blank">Read more</a>
+        <a class="card_link" href={{"/coaching" | prepend: site.url}}>Read more</a>
       </div>
 
       <div class="card">
@@ -56,9 +56,9 @@ layout: default
           <h2>Coaching Workshops</h2>
         </div>
         <div class="card_copy">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Managers can find it challenging to gain the commitment and engagement of their team and effectively manage their performance. My Coaching Workshops introduce managers to coaching-led conversations that help their teams genuinely own the tasks, objectives and challenges they are working to achieve.</p>
         </div>
-        <a class="card_link" href="{{ training_course.link | relative_url }}" target="_blank">Read more</a>
+        <a class="card_link" href={{"/coachingworkshops" | prepend: site.url}}>Read more</a>
       </div>
 
       <div class="card">
@@ -66,9 +66,9 @@ layout: default
           <h2>Performance and Executive Coaching</h2>
         </div>
         <div class="card_copy">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>In business, as in our daily lives, we can get blocked, lose our way or just get so wrapped up in the day to day that we lose sight of what we really want to achieve. Or indeed are expected to achieve. As a Coach, I work to help people in all spheres of business deal with potential stumbling blocks, improve performance, solve problems and accomplish goals.</p>
         </div>
-        <a class="card_link" href="{{ training_course.link | relative_url }}" target="_blank">Read more</a>
+        <a class="card_link" href={{"/performancecoaching" | prepend: site.url}}>Read more</a>
       </div>
 
       <div class="card">
@@ -76,46 +76,15 @@ layout: default
           <h2>Training</h2>
         </div>
         <div class="card_copy">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dThe essence of my training is to help colleagues, Managers, Directors and their teams to have better conversations at work. I offer a range of training courses where those conversations are all about leading and managing teams, giving colleagues support and feedback, dealing with difficult situations, or making better, more compelling presentations.</p>
         </div>
-        <a class="card_link" href="{{ training_course.link | relative_url }}" target="_blank">Read more</a>
+        <a class="card_link" href={{"/training" | prepend: site.url}}>Read more</a>
       </div>
 
     </div>
 
   </section>
 
-
-
-  <section id="contact">
-
-    <h2 class="section-heading">Contact Me</h2>
-
-    <p>I can coach you you know. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-    <p>This paragraph will make you want to call me.</p>
-
-    <div class="deck">
-      <div class="card quote_card">
-        <blockquote>
-          <img class="opening-speechmarks" src="./assets/images/speechmarks.png" alt="speechmarks" />
-          Al's a top bloke. Worth giving him a call.
-          <p>– Someone Cool</p>
-        </blockquote>
-      </div>
-      <div class="card">
-        <div class="card_heading">
-          <h2>Contact</h2>
-        </div>
-        <div class="card_copy">
-          <br />
-          <p>Email: <a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a></p>
-          <p>Phone: <a href="tel:+447881023637">+44 7881 023 637</a></p>
-          <p>LinkedIn: <a href="https://linkedin.com/in/alanmead" target="_blank">linkedin/in/alanmead</a></p>
-        </div>
-      </div>
-    </div>
-
-  </section>
+  {% include contact.html %}
 
 </div>

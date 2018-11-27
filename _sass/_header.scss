@@ -22,7 +22,7 @@
     @include for-tablet-portrait-up {
       display: block;
     }
-    a {
+    a, .dropdown {
       font-size: 16px;
       font-weight: normal;
       margin-left: 15px;
@@ -31,6 +31,33 @@
       }
       @include for-tablet-landscape-up {
           font-size: 17px;
+      }
+    }
+    .dropdown {
+      color: $brand-color;
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: #fff;
+      min-width: 360px;
+      box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.1);
+      padding: 16px 16px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      a {
+        margin-left: 0;
+        display: block;
+        padding: 12px 15px;
+        text-align: left;
+        &:hover {
+          background: #eaeaea;
+        }
       }
     }
   }

@@ -2,16 +2,21 @@
 
   <div class="container">
     <div class="brand">
-      <a href="./">
-        <img src="./assets/images/logo.pdf" alt="Alan Mead Coach, Trainer" />
+      <a href={{ "/" | prepend: site.url }}>
+        <img src={{ "/assets/images/logo.pdf" | prepend: site.url }} alt="Alan Mead. Coach, Trainer" />
       </a>
     </div>
     <nav>
-      <a href="#about" class="smooth-scroll">About</a>
-      <a href="#coaching" class="smooth-scroll">Coaching</a>
-      <a href="#" class="smooth-scroll">Coaching Workshops</a>
-      <a href="#" class="smooth-scroll">Executive Coaching</a>
-      <a href="#training" class="smooth-scroll">Training</a>
+      <a href={{ "/about" | prepend: site.url }}>About</a>
+      <div class="dropdown">
+        <span>Coaching </span>
+        <div class="dropdown-content">
+          <a href={{ "/coaching" | prepend: site.url }}>Personal Coaching</a>
+          <a href={{ "/coachingworkshops" | prepend: site.url }}>Coaching Workshops</a>
+          <a href={{ "/performancecoaching" | prepend: site.url }}>Performance and Executive Coaching</a>
+        </div>
+      </div>
+      <a href={{ "/training" | prepend: site.url }}>Training</a>
       <a href="#contact" class="smooth-scroll">Contact</a>
     </nav>
 

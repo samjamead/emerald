@@ -2,24 +2,25 @@
 
   <div class="container">
     <div class="footer-content">
-      <div class="brand">
-        <a href="./">
-          <h2>Alan<strong>Mead</strong></h2>
-          <h3><strong>Coach</strong> | Trainer</h3>
+      <div class="footer-column column-left">
+        <a href={{ "/" | prepend: site.url }}>
+          <img src={{ "/assets/images/logo.pdf" | prepend: site.url }} alt="Alan Mead. Coach, Trainer" />
         </a>
       </div>
-      <ul class="footer-nav">
-        <li><a href="#about" class="smooth-scroll">About Me</a></li>
-        <li><a href="#coaching" class="smooth-scroll">Coaching</a></li>
-        <li><a href="#training" class="smooth-scroll">Training</a></li>
-        <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+      <div class="footer-column column-middle">
+        <li><a href={{ "/about" | prepend: site.url }}>About Me</a></li>
+        <li><a href={{ "/coaching" | prepend: site.url }}>Personal Coaching</a></li>
+        <li><a href={{ "/coachingworkshops" | prepend: site.url }}>Coaching Workshops</a></li>
+        <li><a href={{ "/performancecoaching" | prepend: site.url }}>Performance and Executive Coaching</a></li>
+        <li><a href={{ "/training" | prepend: site.url }}>Training</a></li>
         <li><a href="https://linkedin.com/in/alanmead" target="_blank">LinkedIn</a></li>
-        <li><a href="https://twitter.com/{{ site.twitter }}" target="_blank">@{{ site.twitter }}</a></li>
-      </ul>
-    </div>
-    <div class="footer-footer">
-      <p>&copy; Alan Mead 2018</p>
-      <p>Made with &hearts; in the Channel Islands</p>
+        <li><a href="https://twitter.com/{{ site.twitter }}" target="_blank">Twitter</a></li>
+      </div>
+      <div class="footer-column column-right footer-footer">
+        <p>Design and logo by Paul Beck. Thank you. </p>
+        <p>Made with &hearts; in the Channel Islands.</p>
+        <p>&copy; Alan Mead 2018</p>
+      </div>
     </div>
   </div>
 

@@ -15,7 +15,7 @@ img {
   max-width: 100%;
 }
 section {
-  padding: 45px 15px 0;
+  padding: 45px 15px;
   @media (min-width: 980px){
     padding-left: 0;
     padding-right: 0;
@@ -23,6 +23,9 @@ section {
 }
 p, blockquote {
   max-width: 670px;
+}
+h1, h2, h3, h4 {
+  color: #666;
 }
 h1 {
   font-size: 24px;
@@ -38,4 +41,11 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: $brand-color;
+}
+ul {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  li {
+    margin-bottom: 15px;
+  }
 }
