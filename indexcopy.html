@@ -39,53 +39,73 @@ layout: default
 
     <p>As well as Coaching, I’ve been designing and delivering <a href="#training" class="smooth-scroll">Training</a> since 2012. My training focuses on helping people have better conversations. Coaching plays an important part in my training too as it doesn’t have to be a one-to-one experience.</p>
 
+  </section>
+
+  <section id="coaching">
+
+    <h2 class="section-heading">Coaching</h2>
+
+    <p>The Coaching could be focused on issues and challenges in your personal life.</p>
+
+    <p>Or it could be about a work issue affecting you or one of your colleagues. In a work context, I’m experienced working at all levels, from new starters through to Executive Coaching at Board level.<p>
+
+    <p>Either way, it’s made up of a series of one to one sessions, ideally face to face and typically around 90 minutes long. Usually, we would agree the specific topic you want to discuss in these sessions in advance and we would always have an initial chat first before you commit to any formal arrangements, just to see how we get on!</p>
+
     <div class="deck">
-
+      <div class="card quote_card">
+        <blockquote>
+          <img class="opening-speechmarks" src="./assets/images/speechmarks.png" alt="speechmarks" />
+          Helen was going through a challenging period at work. Alan’s easy-going manner allowed her to open up without any barriers - she has come out of the sessions with a clear sense of purpose and a renewed confidence and energy.
+          <p>– Someone Cool</p>
+        </blockquote>
+      </div>
+      {% for coaching_workshop in site.coaching_workshops %}
       <div class="card">
         <div class="card_heading">
-          <h2>Coaching</h2>
+          <h2>{{ coaching_workshop.name }}</h2>
+          <h3 class="card_duration">- {{ coaching_workshop.duration }}</h3>
         </div>
         <div class="card_copy">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>{{ coaching_workshop.copy }}</p>
         </div>
-        <a class="card_link" href="{{ training_course.link | relative_url }}" target="_blank">Read more</a>
+        <a class="card_link" href="{{ coaching_workshop.link | relative_url }}" target="_blank">Read more</a>
       </div>
-
-      <div class="card">
-        <div class="card_heading">
-          <h2>Coaching Workshops</h2>
-        </div>
-        <div class="card_copy">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <a class="card_link" href="{{ training_course.link | relative_url }}" target="_blank">Read more</a>
-      </div>
-
-      <div class="card">
-        <div class="card_heading">
-          <h2>Performance and Executive Coaching</h2>
-        </div>
-        <div class="card_copy">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <a class="card_link" href="{{ training_course.link | relative_url }}" target="_blank">Read more</a>
-      </div>
-
-      <div class="card">
-        <div class="card_heading">
-          <h2>Training</h2>
-        </div>
-        <div class="card_copy">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <a class="card_link" href="{{ training_course.link | relative_url }}" target="_blank">Read more</a>
-      </div>
-
+      {% endfor %}
     </div>
 
   </section>
 
+  <section id="training">
 
+    <h2 class="section-heading">Training</h2>
+
+    <p>My Training covers a number of areas that all focus on conversations in one way or another. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <p>More copy about training, and training things. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+    <div class="deck">
+      <div class="card quote_card">
+        <blockquote>
+          <img class="opening-speechmarks" src="./assets/images/speechmarks.png" alt="speechmarks" />
+          Alan's training has quote about not being told what to do and automatically resisting it, but owning the solution and wanting to make it happen. Would recommend to a friend.
+          <p>– Someone Cool</p>
+        </blockquote>
+      </div>
+      {% for training_course in site.training_courses %}
+      <div class="card">
+        <div class="card_heading">
+          <h2>{{ training_course.name }}</h2>
+          <h3 class="card_duration">- {{ training_course.duration }}</h3>
+        </div>
+        <div class="card_copy">
+          <p>{{ training_course.copy }}</p>
+        </div>
+        <a class="card_link" href="{{ training_course.link | relative_url }}" target="_blank">Read more</a>
+      </div>
+      {% endfor %}
+    </div>
+
+  </section>
 
   <section id="contact">
 
