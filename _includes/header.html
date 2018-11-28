@@ -1,10 +1,15 @@
 <header class="site-header">
 
-  <div class="container">
+  <div class="container navbar">
     <div class="brand">
       <a href={{ "/" | prepend: site.url }}>
         <img src={{ "/assets/images/logo.png" | prepend: site.url }} alt="Alan Mead. Coach, Trainer" />
       </a>
+      <button class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </div>
     <nav>
       <a href={{ "/about" | prepend: site.url }}>About</a>
