@@ -16,10 +16,11 @@
 main {
   @include for-tablet-portrait-up {
     padding-top: 100px;
-  };
+  }
 }
 .hero {
-  background: url("./images/alan_1_blue_wide.jpg") no-repeat right bottom, linear-gradient(#A1DAF8, #A1DAF8);
+  background: url('./images/alan_1_blue_wide.jpg') no-repeat right bottom,
+    linear-gradient(#a1daf8, #a1daf8);
   background-size: 180%;
   min-height: 290px;
   display: flex;
@@ -27,15 +28,15 @@ main {
   @include for-big-phones-up {
     min-height: 320px;
     background-size: 165%;
-  };
+  }
   @include for-tablet-portrait-up {
     min-height: 400px;
     background-size: 120%;
-  };
+  }
   @include for-tablet-landscape-up {
     min-height: 480px;
     background-size: 110%;
-  };
+  }
   .opening-speechmarks {
     display: block;
     max-width: 50px;
@@ -48,14 +49,14 @@ main {
       background: #fff;
       display: flex;
       align-items: center;
-    };
+    }
     @include for-tablet-landscape-up {
       flex: 0 0 55%;
-    };
+    }
     @include for-desktop-up {
       flex: 0 0 60%;
       margin-left: -70px;
-    };
+    }
     blockquote {
       color: #222;
       padding: 20px 0;
@@ -65,10 +66,10 @@ main {
       font-style: italic;
       @include for-tablet-landscape-up {
         font-size: 24px;
-      };
+      }
       @include for-desktop-up {
         padding-left: 5px;
-      };
+      }
     }
   }
 }
@@ -82,7 +83,7 @@ main {
   background: $tint;
   color: #fff;
   padding: 30px 15px;
-  text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   margin-bottom: 1em;
   letter-spacing: 3px;
 }
@@ -129,7 +130,7 @@ main {
   margin-bottom: 30px;
   @include for-tablet-landscape-up {
     flex: 0 0 48%;
-  };
+  }
   .card_heading {
     flex: 0;
     h2 {
