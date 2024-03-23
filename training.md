@@ -59,3 +59,6 @@ A one-day course for a maximum of 6 delegates that introduces the core elements 
 ## Print Production and the dark art of CMYK
 
 When a printer produces a newspaper, a leaflet or maybe some packaging, people are amazed to discover that it’s nearly always printed using just 4 colours, and one of those is black! So how do they do that? And how can you ensure the printer you give the printer the best brief to achieve the best results? A half-day session.
+
+<br />
+<small>\*<strong>Taking Responsibility – Why UK PLC needs better managers</strong> published in October 2023 by the Chartered Management Institute (CMI) and You Gov</small>
