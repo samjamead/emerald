@@ -19,7 +19,7 @@
       padding-bottom: 30px;
       @include for-tablet-landscape-up {
         flex: 0 0 31%;
-      };
+      }
       li {
         margin-bottom: 15px;
         a {
@@ -32,30 +32,30 @@
     .column-middle {
       @include for-tablet-landscape-up {
         text-align: left;
-      };
+      }
     }
     .column-left {
       @include for-tablet-landscape-up {
         flex: 0 0 20%;
-      };
+      }
     }
     .column-middle {
       @include for-tablet-landscape-up {
-        flex: 0 0 40%;
-      };
+        flex: 0 0 35%;
+      }
     }
     .column-right {
       @include for-tablet-landscape-up {
-        flex: 0 0 31%;
+        flex: 0 0 35%;
         text-align: right;
-      };
+      }
     }
   }
   .footer-footer {
     text-align: center;
     @include for-tablet-landscape-up {
       text-align: right;
-    };
+    }
     p {
       max-width: none;
       margin-right: 0;
